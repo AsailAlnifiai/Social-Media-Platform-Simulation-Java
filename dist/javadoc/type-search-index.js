@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"Project","l":"Comment"},{"p":"Project","l":"Following"},{"p":"Project","l":"Post"},{"p":"Project","l":"SocialMediaAbb"},{"p":"Project","l":"SocialMediaElement"},{"p":"Project","l":"SocialMediaPlatform"}];updateSearchResults();
