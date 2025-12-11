@@ -146,9 +146,8 @@ abstract class User implements SocialMediaElement {
         if (!following.contains(newFollowing)) {
             following.add(newFollowing);
             
-            //Following followRelation = new Following(user,this);
-            if (!user.getFollowers().contains(newFollowing)){ //(followRelation)){
-                user.getFollowers().add(newFollowing);//(followRelation);
+            if (!user.getFollowers().contains(newFollowing)){ 
+                user.getFollowers().add(newFollowing);
             }
         } else {
             throw new SocialMediaException("You already Following this user");
@@ -169,7 +168,6 @@ abstract class User implements SocialMediaElement {
         if (following.contains(followRelation)) {
             following.remove(followRelation);
             
-          //  Following followerRelation = new Following(user,this);
             if (user.getFollowers().contains(followRelation)) {
                 user.getFollowers().remove(followRelation);
             }
@@ -189,8 +187,7 @@ abstract class User implements SocialMediaElement {
             throw new SocialMediaException("Cannot remove a null follower.");
         }
         
-        Following followerRelation = new Following(follower, this);
-       // Following followingRelation = new Following(follower, this); 
+        Following followerRelation = new Following(follower, this); 
         
         if (this.followers.contains(followerRelation)) {
             this.followers.remove(followerRelation);
